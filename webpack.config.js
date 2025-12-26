@@ -15,7 +15,7 @@ module.exports = (env, argv) => {
     path: path.resolve(__dirname, "dist"),
     filename: "[name].bundle.js",
     chunkFilename: "[name].chunk.js",
-    publicPath: "auto",
+    publicPath: isProduction ? "https://license.shoaibarif.site/" : "auto",
     clean: true
   },
   resolve: {
