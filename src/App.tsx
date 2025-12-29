@@ -3,8 +3,8 @@ import { Card, PageHeader, StatCard, Button } from "customMain/components/shared
 import { useAppDispatch, useAppSelector } from "customMain/store/hooks";
 import { increment, decrement, reset } from "customMain/store/slices/counterSlice";
 import { addUser } from "customMain/store/slices/userSlice";
+import { formatRelativeTime, formatDate, isExpiringSoon } from "customMain/utils/dateHelpers";
 import { mockLicenses, mockActivities } from "./data/mockData";
-import { formatRelativeTime, formatDate, isExpiringSoon } from "./utils";
 
 export default function App() {
   const dispatch = useAppDispatch();
